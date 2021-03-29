@@ -1,7 +1,5 @@
 //action creator creates an object which is passed to dispatch
-export function fetchAccounts(action) {
-    
-    return action
+export function fetchAccounts() {
 
 }
 

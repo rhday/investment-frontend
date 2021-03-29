@@ -5,9 +5,6 @@ import { fetchAccounts } from './actions/fetchAccounts';
 
 class App extends React.Component {
 
-  componentDidMount() {
-    this.props.fetchAccounts({type: 'FETCH_ACCOUNTS', payload: {name: 'Investment'}})
-  }
 
   render(){
     return(
@@ -25,4 +22,4 @@ class App extends React.Component {
   ///}
 ///}
 
-export default connect(null, {fetchAccounts})(App);
+export default connect()(App);
