@@ -1,6 +1,6 @@
 import './styling/App.css';
 import React from 'react';
-import { connect } from 'react-redux';
+//import { connect } from 'react-redux';
 import AccountsContainer from './containers/AccountsContainer';
 
 class App extends React.Component {
@@ -22,4 +22,4 @@ class App extends React.Component {
   ///}
 ///}
 
-export default connect()(App);
+export default App;
