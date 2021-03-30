@@ -1,7 +1,7 @@
 import './styling/App.css';
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchAccounts } from './actions/fetchAccounts';
+import AccountsContainer from './containers/AccountsContainer';
 
 class App extends React.Component {
 
@@ -9,7 +9,7 @@ class App extends React.Component {
   render(){
     return(
       <div className="Investment App">
-        Investment App
+        <AccountsContainer />
       </div>
     )
   }
