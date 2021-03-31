@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import Accounts from '../components/Accounts';
 import AccountInput from '../components/AccountInput';
 import { connect } from 'react-redux';
@@ -13,7 +14,7 @@ class AccountsContainer extends React.Component {
     render(){
         return(
             <div>
-                <AccountInput /><br/><br/>
+                <Route path="/accounts/new" component={AccountInput} /><br/><br/>
                 <Accounts accounts={this.props.accounts}/>
             </div>
         )
