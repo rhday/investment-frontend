@@ -13,3 +13,6 @@ const Accounts = (props) => {
 };
 
 export default Accounts;
+
+//{props.accounts.map(account => 
+//    <div key={account.id}><Account account={account}/></div>)}
