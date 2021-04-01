@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Accounts from '../components/Accounts';
 import Account from '../components/Account';
 import AccountInput from '../components/AccountInput';
@@ -14,10 +14,10 @@ class AccountsContainer extends React.Component {
 
     render(){
         return(
-            <div>
-                <Route path="/accounts/new" component={AccountInput} /><br/><br/>
-                <Route path="/accounts/:id" render={(routerProps) => <Account {...routerProps} accounts={this.props.accounts}/>}/>
-                <Route exact path="/accounts" render={(routerProps) => <Accounts {...routerProps} accounts={this.props.accounts}/>} />
+            <div>      
+               <Route path="/accounts/new" component={AccountInput} /><br/><br/>
+               <Route path="/accounts/:id" render={(routerProps) => <Account {...routerProps} accounts={this.props.accounts}/>}/>
+               <Route exact path="/accounts" render={(routerProps) => <Accounts {...routerProps} accounts={this.props.accounts}/>} />    
             </div>
         )
     }
