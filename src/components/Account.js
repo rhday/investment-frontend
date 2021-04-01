@@ -1,4 +1,5 @@
 import React from 'react';
+import TransactionsContainer from '../containers/TransactionsContainer';
 import {Redirect} from 'react-router-dom';
 
 const Account = (props) => {
@@ -6,9 +7,12 @@ const Account = (props) => {
     let account = props.accounts[props.match.params.id - 1]
 
     return(
-        <h2>
-            {account ? account.name : null} - {account ? account.balance : null}
-        </h2>
+        <div>
+            <h2>
+                {account ? account.name : null} - {account ? account.balance : null}
+            </h2>
+            <TransactionsContainer />
+        </div>
     );
 };
 
