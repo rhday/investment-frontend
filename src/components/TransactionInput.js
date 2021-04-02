@@ -35,6 +35,8 @@ class TransactionInput extends React.Component {
                     </select>
                     <label>Transaction Amount:</label>
                     <input type="text" name="amount" value={this.state.amount} onChange={this.handleChange}/>
+                    <label>Asset:</label>
+                    <input type="text" name="asset" value={this.state.asset} onChange={this.handleChange}/>
                     <input type="submit" />
                 </form> 
             </div>
