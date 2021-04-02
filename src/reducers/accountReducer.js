@@ -2,7 +2,6 @@
 
 //pass in default state as an empty object with an empty array of 'accounts' inside and the action.
 export default function accountReducer(state = {accounts: []}, action){
-    //debugger
     switch (action.type){
         case 'FETCH_ACCOUNTS':
             return {accounts: action.payload}
@@ -18,6 +17,7 @@ export default function accountReducer(state = {accounts: []}, action){
             })
             return {...state, accounts: accounts}
         case 'DELETE_TRANSACTION':
+            //debugger
             let deleted = state.accounts.map(account => {
                 if (account.id === action.payload.id){
                     return action.payload

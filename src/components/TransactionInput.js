@@ -6,7 +6,8 @@ class TransactionInput extends React.Component {
 
     state = {
         kind: 'deposit',
-        amount: ''
+        amount: '',
+        asset: ''
     }
 
     handleChange = (event) => {
