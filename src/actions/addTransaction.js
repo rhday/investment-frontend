@@ -11,3 +11,12 @@ export default function addTransaction (transaction, accountId) {
         .then(account => dispatch({type: 'ADD_TRANSACTION', payload: account}))
     }
 }
+
+//.then(account => {
+    //if (account.error){
+    //    alert(account.error)
+    //} else{
+    //    dispatch({type: 'ADD_TRANSACTION', payload: account})
+   // }
+//})
+
