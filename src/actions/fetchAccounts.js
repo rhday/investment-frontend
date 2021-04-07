@@ -1,8 +1,8 @@
 //action creator creates an object which is passed to dispatch
-export function fetchAccounts() {
+export function fetchAccounts(userId) {
 
     return (dispatch) => {
-        fetch('http://localhost:3000/api/v1/accounts')
+        fetch(`http://localhost:3000/api/v2/accounts`)
         .then(res => res.json())
         .then(accounts => dispatch({
             type: 'FETCH_ACCOUNTS',

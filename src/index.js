@@ -16,12 +16,13 @@ import App from './App';
 
 const reducer = combineReducers({
     users: usersReducer,
-    currentUserReducer
+    current_user: currentUserReducer,
+    accounts: accountReducer
 })
 
 const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION__COMPOSE__ && window.__REDUX_DEVTOOLS_EXTENSION__()) || compose;
 
-let store = createStore(accountReducer, composeEnhancers(applyMiddleware(thunk)));
+let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 
 ReactDOM.render(
     <Provider store={store}>

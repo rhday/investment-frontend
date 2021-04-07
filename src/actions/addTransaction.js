@@ -1,6 +1,6 @@
-export default function addTransaction (transaction, accountId) {
+export default function addTransaction (transaction, accountId, userId) {
     return(dispatch) => {
-        fetch(`http://localhost:3000/api/v1/accounts/${accountId}/transactions`, {
+        fetch(`http://localhost:3000/api/v2/users/${userId}/accounts/${accountId}/transactions`, {
             method:'POST',
             headers: {
                'Content-Type': 'application/json' 

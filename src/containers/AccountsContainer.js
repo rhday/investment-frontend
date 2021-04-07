@@ -13,6 +13,7 @@ class AccountsContainer extends React.Component {
     }
 
     render(){
+        //debugger
         return(
             <div> 
                 <Route path="/account/new" component={AccountInput} /><br/><br/>
