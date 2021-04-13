@@ -2,6 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import addTransaction from '../actions/addTransaction'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 class TransactionInput extends React.Component {
 
     state = {
