@@ -1,7 +1,7 @@
-export const addAccount = (data) => {
+export const addAccount = (data, userId) => {
     //debugger
     return(dispatch) => {
-        fetch('http://localhost:3000/api/v2/users/accounts', {
+        fetch('http://localhost:3000/api/v2/accounts', {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

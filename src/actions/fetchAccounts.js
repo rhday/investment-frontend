@@ -2,6 +2,7 @@
 export function fetchAccounts(userId) {
 
     return (dispatch) => {
+        //debugger
         fetch(`http://localhost:3000/api/v2/accounts`)
         .then(res => res.json())
         .then(accounts => dispatch({
