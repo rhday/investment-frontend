@@ -20,8 +20,8 @@ class App extends React.Component {
         <ReactBootStrap.Nav.Link href="/accounts">Accounts</ReactBootStrap.Nav.Link>
         <ReactBootStrap.NavDropdown title="More options" id="basic-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item href="/account/new">Add Account</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.2">Another action</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="#action/3.3">Some more functionality</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="#action/3.2">Coming soon...</ReactBootStrap.NavDropdown.Item>
+        {/*<ReactBootStrap.NavDropdown.Item href="#action/3.3">Some more functionality</ReactBootStrap.NavDropdown.Item>*/}
         {/*<ReactBootStrap.NavDropdown.Divider />*/}
         {/* <ReactBootStrap.NavDropdown.Item href="#action/3.4">Separated link</ReactBootStrap.NavDropdown.Item>*/}
         </ReactBootStrap.NavDropdown>

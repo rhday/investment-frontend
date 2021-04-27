@@ -15,7 +15,7 @@ const Transactions = (props) => {
     return(
         <div>
           {props.transactions && props.transactions.map(transaction => 
-            <li key={transaction.id}>{transaction.kind} - {transaction.amount} - {transaction.asset}  <Button variant="primary" onClick={() => handleDelete(transaction)}>Delete</Button></li>
+            <li key={transaction.id}>{transaction.kind} - {transaction.amount} - {transaction.asset}  <Button variant="outline-danger" onClick={() => handleDelete(transaction)}>Delete</Button></li>
             )}
         </div>
     )

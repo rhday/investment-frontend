@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import addTransaction from '../actions/addTransaction'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {Button} from 'react-bootstrap'
 
 class TransactionInput extends React.Component {
 
@@ -40,7 +41,7 @@ class TransactionInput extends React.Component {
                     <input type="text" name="amount" value={this.state.amount} onChange={this.handleChange}/>
                     <label>Asset:</label>
                     <input type="text" name="asset" value={this.state.asset} onChange={this.handleChange}/>
-                    <input type="submit" />
+                    <Button variant="outline-success" type="submit">Submit</Button>
                 </form> 
             </div>
         )
